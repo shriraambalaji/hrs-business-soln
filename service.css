@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.whole{
+    
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 100%;
+}
+.nav{
+    margin-top:-100px;
+    width: 1562px;
+    height: 140px;
+    background: #ED7B1B;
+}
+.nav .logo img{
+    margin-top: -200px;
+    
+    aspect-ratio: 327/140;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-direction:row;
+    margin-left: 300px;
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav li {
+     margin-top: 40px;
+     margin-right: 120px;
+     margin-left: 40px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: ease 0.2s;
+}
+
+.nav a {
+  position: relative; /* REQUIRED for pseudo-element */
+  overflow: hidden;
+}
+
+/* underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+
+}
+
+/* hover underline expand */
+.nav a:hover::after {
+  left: 0;
+  width: 100%;
+  
+}
+
+.first{
+    margin-top: -330px;
+    margin-left: -5px;
+}
+
+.first .Image1{
+    width: 1550px;
+height: 735px;
+}
+
+.first .layer1{
+    width: 1550px;
+    height: 735px;
+    position: relative;
+    bottom: 740px;
+}
+
+.first h1{
+    position: relative;
+    top: 500px;
+    color: #FFF;
+font-family: Inter;
+font-size: 128px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+z-index: 1;
+}
